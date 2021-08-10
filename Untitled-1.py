@@ -14,5 +14,5 @@ def NO():
     print('Succeed play')
 
 while True:
-    keyboard.add_hotkey('Q',GM)
-    keyboard.add_hotkey('W',NO)
+    keyboard.add_hotkey('1',GM)
+    keyboard.add_hotkey('2',NO)
