@@ -13,6 +13,7 @@ def NO():
     playsound.playsound('no.mp3')
     print('Succeed play')
 
-while True:
-    keyboard.add_hotkey('1',GM)
-    keyboard.add_hotkey('2',NO)
+keyboard.add_hotkey('1',GM)
+keyboard.add_hotkey('2',NO)
+
+keyboard.wait()
