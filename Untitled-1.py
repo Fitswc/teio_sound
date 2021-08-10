@@ -1,17 +1,18 @@
-from easysound import play
+import playsound
 import os.path
 import keyboard
 
-
-#virdata
+# virdata
 
 print('Listening...')
+def GM():
+    playsound.playsound('goodmorning.mp3')
+    print('Succeed play')
+    
+def NO():
+    playsound.playsound('no.mp3')
+    print('Succeed play')
+
 while True:
-    keyboard.wait('1')
-    play.play('goodmorning.mp3')
-    print('Succeed_play')
-    keyboard.wait('2')
-    play.play('no.mp3')
-    print('Succeed_2')
-
-
+    keyboard.add_hotkey('Q',GM)
+    keyboard.add_hotkey('W',NO)
